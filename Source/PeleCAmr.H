@@ -21,6 +21,7 @@ class PeleCAmr : public amrex::Amr
 
 public:
   void writePlotFile() override;
+  void writeBasePlotFile(const int step);
   void writeSmallPlotFile() override;
   void writePlotFileDoit(
     const std::string& pltfile,
